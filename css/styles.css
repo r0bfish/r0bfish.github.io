@@ -45,6 +45,7 @@ ul {
 }
 
 .header-margin { margin-top: 70px; }
+.header-index { margin-top: 30px; }
 
 #header a, #header p, #header h1, #header li {
   color: white;
@@ -244,6 +245,7 @@ footer img {
   #header h1 { font-size: 3rem; padding: 20px; }
   
   .header-margin { margin-top: 160px; }
+  .header-index { margin-top: 70px; }
   
   .logo {
     height: 60px;
@@ -294,6 +296,7 @@ footer img {
   footer ul {
 	font-size: 3rem;
     margin: 40px 0;
+	margin-left: 15%;
   }
   
   footer img {
