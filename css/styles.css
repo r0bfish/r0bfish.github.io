@@ -241,9 +241,7 @@ footer img {
 
 @media (orientation: portrait) { 
 /* phones, 99.9% of the time */
-  #header h1 {
-    font-size: 3rem;
-  }
+  #header h1 { font-size: 3rem; padding: 20px; }
   
   .header-margin { margin-top: 160px; }
   
