@@ -1,0 +1,88 @@
+
+/*== Card ==*/
+#card-area {
+  margin-bottom: 100px;
+}
+
+#card-area > header {
+  text-align: center;
+  padding-bottom: 10px;
+  line-height: 2em;
+}
+
+#card-area > header > h2 {
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.card {
+  background-color: white;
+  color: white;
+  box-shadow: 0px 8px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  min-width: 20%;
+  max-width: 20%;
+  margin: 20px 25px;
+}
+
+
+/*== Card header ==*/
+.card-header { 
+  background-color: #404040;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-header > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.1rem;
+  width: 90%;
+  margin: auto;
+}
+
+
+/*== Card content ==*/
+.card-text-grid {
+  margin: 10px auto;
+  width: 90%;
+  color: black;
+  text-align: center;
+}
+.card-text-grid > p {
+  padding: .75rem;
+  line-height: 1.5em;
+}
+.card-text-grid > h3  {
+  padding: .75rem;
+  padding-bottom: 0;
+  margin-top: 1em;
+}
+.card-text-grid > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: square;
+  margin-left: 20px;
+}
+.card-text-grid > ul > li {
+  margin: 0 20px;
+  padding: 0;
+  font-size: 1em;
+}
+
+
+
+@media screen and (max-width: 1001px) {
+  .card {
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
