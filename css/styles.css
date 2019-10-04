@@ -188,9 +188,9 @@ footer h4 {
   color: #dddddd;
 }
   
-  footer img {
-    width: 20px;
-  }
+footer img {
+  width: 20px;
+}
 
 #wrapper {
   display: flex;
