@@ -41,3 +41,24 @@ ul.belts {
 .blue { background-color: #0000ff; }
 .brown { background-color: brown; }
 .black { background-color: black; }
+
+@media (orientation: portrait) { 
+/* phones, 99.9% of the time */
+
+  .belts {
+    max-width: none;
+	width: 75%;
+  }
+  
+  .belt {
+    flex: 1;
+    height: 30px;
+    min-width: none;
+    max-width: none;
+}
+
+  .belts > li > p {
+    font-size: 2.5em;
+    width: 260px;
+  }
+}

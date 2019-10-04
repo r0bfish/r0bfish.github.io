@@ -31,42 +31,6 @@
   margin: 20px 25px;
 }
 
-/*.card:hover {
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -o-transform: scale(1.02); 
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
-  transition: all 0.1s;
-}*/
-
-
-/*== Card header ==*/
-/*.card-header > figure {
-  overflow: hidden;
-  position: relative;
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-header > figure > img {
-  width: 100%;
-}
-.card-header > figure > figcaption {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0,0,0,.7);
-  width: 100%;
-}
-.card-header > figure > figcaption > h3 {
-  color: white;
-  padding: .75rem;
-  font-size: 1.25rem;
-  width: 90%;
-  margin: auto;
-}*/
 .card-header > figure {
   position: relative;
   color: white;
@@ -118,4 +82,27 @@
   margin: 0 20px;
   padding: 0;
   font-size: 1em;
+}
+
+
+@media (orientation: portrait) { 
+/* phones, 99.9% of the time */
+  .col {
+    flex-direction: column;
+	align-content: center;
+  }
+  
+  .card {
+    max-width: 90%;
+    margin: 3em 0;
+  }
+  
+  .card-header > figure > figcaption > h3 {
+    font-size: 3.25rem;
+  }
+  
+  .card-text-grid > p {
+    padding: 1.5em .75em;
+    line-height: 1.5em;
+  }
 }

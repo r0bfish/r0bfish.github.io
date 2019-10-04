@@ -86,3 +86,27 @@
     max-width: 400px;
   }
 }
+
+@media (orientation: portrait) { 
+/* phones, 99.9% of the time */
+  .col {
+    flex-direction: column;
+	align-content: center;
+  }
+  
+  .card {
+    border-radius: 1.5rem;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 50px 25px;
+  }
+  
+  /*== Card header ==*/
+  .card-header { 
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+  
+  .card-header > h3 { font-size: 3rem; }
+  .card-text-grid > p { font-size: 3rem; }
+}
