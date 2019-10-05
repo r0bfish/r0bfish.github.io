@@ -39,7 +39,7 @@
   margin-bottom: 5px;
   position: relative;
   
-  background: black;
+  background: white;
   border-radius: 3px;
   
   z-index: 1;
@@ -96,7 +96,7 @@
 #menu-mobile
 {
   position: absolute;
-  width: 100vw;
+  width: 101vw;
   margin: -101px 0 0 -51px;
   margin-left: 0;
   padding: 50px;
@@ -115,6 +115,9 @@
   display: flex;
   flex-direction: column;
   
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  
 }
 
 #menu-mobile li
@@ -128,15 +131,38 @@
  */
 #hamburger input:checked ~ ul
 {
-  transform: translate(calc(-100% + 36px), 0);
+  transform: translate(calc(-100% + 31px), 0);
 }
 
 
 
 
 /* Header gets to big, fix */
-/*@media screen and (max-width: 904px) {
+@media (orientation: portrait) { 
   #hamburger {
     display: block;
+	margin: 20px;
   }
-}*/
+  
+  #hamburger input:checked ~ span { transform: rotate(45deg) translate(-2px, -1px); }
+  #hamburger input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); }
+
+  
+  #hamburger input {
+    width: 80px;
+    height: 64px;
+    top: -14px;
+    left: -10px;
+    margin-right: 25px;
+  }
+
+  #hamburger span
+  {
+    display: block;
+    width: 66px;
+    height: 8px;
+    margin-bottom: 12px;
+  }
+  
+  #menu-mobile li { font-size: 4em; padding: 30px 0; }
+}

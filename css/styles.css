@@ -229,6 +229,9 @@ footer img {
     min-width: 300px;
   }
 }
+
+
+
 @media screen and (max-width: 758px) {
   footer ul {   
     min-width: 200px;
@@ -240,11 +243,26 @@ footer img {
 /* desktop/tablets, 99.9% of the time */
 }
 
+
 @media (orientation: portrait) { 
 /* phones, 99.9% of the time */
   #header h1 { font-size: 3rem; padding: 20px; }
   
-  .header-margin { margin-top: 160px; }
+  #header {
+    display: flex;
+    flex-direction: row;
+	padding-left: 30px;
+  }
+  .navigation-top {
+	flex: 1;
+	justify-content: flex-end;
+  }
+
+  #menu-desktop {
+    display: none;
+  }
+  
+  .header-margin { margin-top: 113px; }
   .header-index { margin-top: 70px; }
   
   .logo {
