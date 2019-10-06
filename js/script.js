@@ -22,7 +22,7 @@ $(document).ready(function(){
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-	  $('html, body').animate({ scrollTop: $(hash).position().top - 65 }, 500, function() {
+	  $('html, body').animate({ scrollTop: $(hash).position().top - 135 }, 500, function() {
 		  if (history.pushState) { 
 		    history.pushState(null, null, hash);
 		  } else {
