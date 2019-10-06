@@ -20,81 +20,30 @@ body {
 
 a {
   text-decoration: none;
+  color: #f2f2f2;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-}
+
 
 
 /*--- Grid areas ---*/
-#header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  background: #252525;
-  padding: 5px;
-  box-shadow: -3px 6px 3px -3px rgba(0, 0, 0, 0.35);
-  position: fixed;
-  z-index: 1;
-}
+
 
 .header-margin { margin-top: 70px; }
 .header-index { margin-top: 30px; }
 
-#header a, #header p, #header h1, #header li {
-  color: white;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-
-#header h1 {
-  font-size: 1.5em;
-}
 
 .logo {
   height: 30px;
   margin-right: 15px;
 }
 
-
-.navigation-top {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  margin-top: 5px;
-}
-
-.navigation-top li {
-  padding: 5px 20px;
-}
-
-.navigation-top a {
-  color: white;
-}
-
-.navigation-top a:hover {
-  border-bottom: 1px solid white;
-}
-
-.active { border-bottom: 1px solid white; }
-
-#banner {
+.banner {
   position: relative;
   text-align: center;
 }
 
-#banner > figure {
+.banner > figure {
   max-height: 300px;
   overflow: hidden;
   position: relative;
@@ -103,18 +52,18 @@ ul {
   justify-content: center;
 }
 
-#banner > figure > img {
+.banner > figure > img {
   width: 100%;
 }
 
-#banner > figure > figcaption {
+.banner > figure > figcaption {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#banner > figure > figcaption > h1 {
+.banner > figure > figcaption > h1 {
   padding: .75rem;
   font-size: 2.2rem;
   text-align: center;
@@ -214,7 +163,14 @@ footer img {
 }
 
 .height-full {
+  min-height: 100vh;
 }
+
+#kampsport {}
+#begin-training {}
+#schema {}
+#pris {}
+#om-oss {}
 
 
 /* Header gets to big, fix */
@@ -246,21 +202,7 @@ footer img {
 
 @media (orientation: portrait) { 
 /* phones, 99.9% of the time */
-  #header h1 { font-size: 3rem; padding: 20px; }
-  
-  #header {
-    display: flex;
-    flex-direction: row;
-	padding-left: 30px;
-  }
-  .navigation-top {
-	flex: 1;
-	justify-content: flex-end;
-  }
 
-  #menu-desktop {
-    display: none;
-  }
   
   .header-margin { margin-top: 113px; }
   .header-index { margin-top: 70px; }
@@ -270,19 +212,8 @@ footer img {
     margin-right: 15px;
   }
 
-  #banner > figure > figcaption > h1 { font-size: 4.2rem; padding: 0; }
-  .navigation-top {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    margin-top: 5px;
-  }
+  .banner > figure > figcaption > h1 { font-size: 4.2rem; padding: 0; }
 
-  .navigation-top li {
-    padding: 25px 30px;
-	font-size: 2.4rem;
-  }
-  
   .text {
     max-width: 90%;
     line-height: 4em;
