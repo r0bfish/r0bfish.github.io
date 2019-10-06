@@ -252,6 +252,8 @@ footer img {
   }
   
   .height-full {
+	min-height: 100vh;
+    transition: min-height 1000s steps(1);
     display: flex;
     align-items: center;
   }

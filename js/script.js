@@ -6,9 +6,9 @@ $(document).ready(function(){
 	  $("#menu-btn").click();
   });
 
-  if (isPortrait()) {
+  /*if (isPortrait()) {
     $("#intro").css("height", 1.0*$(window).height());
-  }
+  }*/
 	
 	
   // Add smooth scrolling to all links
@@ -42,6 +42,8 @@ $(document).ready(function(){
 
   });
 });
+
+
 
 function isPortrait() {
     return window.innerHeight > window.innerWidth;
