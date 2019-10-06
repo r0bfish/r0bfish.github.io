@@ -80,9 +80,12 @@
     height: 270px;
   }
   
+  .coach > h4 {
+    font-size: 2.5em;
+  }
   
   .coach > p {
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
   
   
