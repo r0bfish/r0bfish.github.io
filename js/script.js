@@ -27,7 +27,8 @@ $(document).ready(function(){
 		  if (history.pushState) { 
 		    history.pushState(null, null, hash);
 		  } else {
-			  window.location.hash = hash;
+			  return false;
+			  //window.location.hash = hash;
 		  }
 	  });
         // Add hash (#) to URL
