@@ -35,11 +35,6 @@ ul {
 .header-index { margin-top: 30px; }
 
 
-.logo {
-  height: 30px;
-  margin-right: 15px;
-}
-
 .banner {
   position: relative;
   text-align: center;
@@ -104,7 +99,7 @@ ul {
   max-width: 600px;
   margin: 50px auto;
   padding: 0 10px;
-  line-height: 1.5em;
+  line-height: 1.5;
   color: #454545;
 }
 
@@ -169,7 +164,6 @@ footer img {
 }
 
 .height-full {
-  min-height: 100vh;
 }
 
 #kampsport {}
@@ -211,12 +205,9 @@ footer img {
 
   
   .header-margin { margin-top: 113px; }
-  .header-index { margin-top: 70px; }
-  
-  .logo {
-    height: 60px;
-    margin-right: 15px;
-  }
+  /*.header-index { margin-top: 180px; }*/
+  .header-index { margin-top: 0px; }
+
 
   .banner > figure > figcaption > h1 { font-size: 4.2rem; padding: 0; }
 
@@ -259,7 +250,7 @@ footer img {
   }
   
   .height-full {
-    height: 100vh;
+    min-height: 100vh;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;

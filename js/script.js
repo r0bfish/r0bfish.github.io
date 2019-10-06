@@ -19,10 +19,11 @@ $(document).ready(function(){
 
       // Store hash
       var hash = $(this).attr("href");
+	  var margin = isPortrait() ? 135 : 65;
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-	  $('html, body').animate({ scrollTop: $(hash).position().top - 135 }, 500, function() {
+	  $('html, body').animate({ scrollTop: $(hash).position().top - margin }, 500, function() {
 		  if (history.pushState) { 
 		    history.pushState(null, null, hash);
 		  } else {
@@ -38,6 +39,13 @@ $(document).ready(function(){
 	
 
   });
-  
 });
+
+function isPortrait() {
+    return window.innerHeight > window.innerWidth;
+}
+
+function isLandscape() {
+    return (window.orientation === 90 || window.orientation === -90);
+}
 
