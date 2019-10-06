@@ -140,6 +140,8 @@
 	display: flex;
 	justify-content: center;
     float: none;
+	
+	font-size: 1em;
   }
   #header .menu-icon {
     display: none;
