@@ -167,6 +167,7 @@ footer img {
 .height-full {
 }
 
+#intro
 #kampsport {}
 #begin-training {}
 #schema {}
@@ -206,8 +207,8 @@ footer img {
 
   
   .header-margin { margin-top: 113px; }
-  .header-index { margin-top: 180px; }
-  /*.header-index { margin-top: 0px; }*/
+  /*.header-index { margin-top: 180px; }*/
+  .header-index { margin-top: 0px; }
 
 
   .banner > figure > figcaption > h1 { font-size: 4.2rem; padding: 0; }

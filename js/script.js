@@ -5,7 +5,10 @@ $(document).ready(function(){
   $("#menu").on("click", function () {
 	  $("#menu-btn").click();
   });
-	
+
+  if (isPortrait()) {
+    $("#intro").css("height", 1.0*$(window).height());
+  }
 	
 	
   // Add smooth scrolling to all links
