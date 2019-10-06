@@ -23,7 +23,9 @@ a {
   color: #f2f2f2;
 }
 
-
+ul {
+  list-style: none;
+}
 
 
 /*--- Grid areas ---*/
@@ -132,6 +134,10 @@ footer ul {
 
 footer li {
   color: #aaaaaa;
+}
+
+footer p {
+  font-size: 0.8em;
 }
 
 footer h4 {
