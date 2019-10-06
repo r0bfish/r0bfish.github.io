@@ -1,0 +1,172 @@
+#hamburger
+{
+  display: none;
+  position: relative;
+  margin-right: 25px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#hamburger input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  margin-right: 25px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#hamburger span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: white;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#hamburger span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#hamburger span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#hamburger input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#hamburger input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#hamburger input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu-mobile
+{
+  position: absolute;
+  width: 101vw;
+  margin: -101px 0 0 -51px;
+  margin-left: 0;
+  padding: 50px;
+  padding-top: 125px;
+  left: 100%;
+  
+  background: #393939;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(36px, 0);
+  /*transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0);*/
+  
+  display: flex;
+  flex-direction: column;
+  
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  
+}
+
+#menu-mobile li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu-mobile li:focus {
+  background: red;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#hamburger input:checked ~ ul
+{
+  transform: translate(calc(-100% + 31px), 0);
+}
+
+
+
+
+/* Header gets to big, fix */
+@media (orientation: portrait) { 
+  #hamburger {
+    display: block;
+	margin: 20px;
+  }
+  
+  #hamburger input:checked ~ span { transform: rotate(45deg) translate(-2px, -1px); }
+  #hamburger input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); }
+
+  
+  #hamburger input {
+    width: 80px;
+    height: 64px;
+    top: -14px;
+    left: -10px;
+    margin-right: 25px;
+  }
+
+  #hamburger span
+  {
+    display: block;
+    width: 66px;
+    height: 8px;
+    margin-bottom: 12px;
+  }
+  
+  #menu-mobile li { font-size: 4em; padding: 30px 0; }
+}
