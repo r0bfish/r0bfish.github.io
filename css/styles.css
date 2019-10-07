@@ -281,8 +281,6 @@ footer img {
 	min-height: 100vh;
     transition: min-height 1000s steps(1);
     display: flex;
-	flex-direction: column;
-	justify-content: center;
     align-items: center;
   }
 	
