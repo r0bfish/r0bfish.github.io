@@ -33,6 +33,7 @@
 .sjj { background-color: #fffdcf; }
 .child {background-color: #ccffc2; }
 .free { background-color: #ffffff; }
+.hide { background-color: #ffffff; opacity: 0.5; }
 
 @media screen and (max-width: 911px), (orientation: portrait) {
   .flex-row {
@@ -52,7 +53,7 @@
   .flex-column > h3 {
 	align-self: center;
 	min-width: 170px;
-	font-size: 2em;
+	font-size: 2.5em;
   }
   
   .training {

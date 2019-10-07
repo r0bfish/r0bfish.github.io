@@ -1,16 +1,15 @@
 $(document).ready(function(){
 	
+  addCollapsible();
 	
   // Close menu when an item is selected.
   $("#menu").on("click", function () {
 	  $("#menu-btn").click();
   });
 
-  /*if (isPortrait()) {
-    $("#intro").css("height", 1.0*$(window).height());
-  }*/
-	
-	
+
+  
+  
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -43,6 +42,49 @@ $(document).ready(function(){
   });
 });
 
+
+
+function addCollapsible() {
+  $("#button-sjj").on('click', function(event) {
+    $('#about-sjj').css("display", "block");
+    $('#about-bujinkan').css("display", "none");
+    $('#about-sjj-barn').css("display", "none");
+    $('#about-sjj-rank').css("display", "none");
+	
+	//var margin = isPortrait() ? 65 : 110;
+	//$([document.documentElement, document.body]).animate({ scrollTop: $("#button-bujinkan").offset().top + margin}, 500);
+  });
+  
+  $("#button-bujinkan").on('click', function(event) {
+    $('#about-sjj').css("display", "none");
+    $('#about-bujinkan').css("display", "block");
+    $('#about-sjj-barn').css("display", "none");
+    $('#about-sjj-rank').css("display", "none");
+	
+	//var margin = isPortrait() ? 65 : 110;
+	//$([document.documentElement, document.body]).animate({ scrollTop: $("#button-bujinkan").offset().top + margin}, 500);
+
+  });
+  
+  $("#button-sjj-barn").on('click', function(event) {
+    $('#about-sjj').css("display", "none");
+    $('#about-bujinkan').css("display", "none");
+    $('#about-sjj-barn').css("display", "block");
+    $('#about-sjj-rank').css("display", "none");
+	//var margin = isPortrait() ? 65 : 110;
+	//$([document.documentElement, document.body]).animate({ scrollTop: $("#button-sjj-barn").offset().top + margin}, 500);
+  });
+  
+  
+  $("#button-sjj-rank").on('click', function(event) {
+    $('#about-sjj').css("display", "none");
+    $('#about-bujinkan').css("display", "none");
+    $('#about-sjj-barn').css("display", "none");
+    $('#about-sjj-rank').css("display", "block");
+	//var margin = isPortrait() ? 65 : 110;
+	//$([document.documentElement, document.body]).animate({ scrollTop: $("#button-sjj-rank").offset().top + margin}, 500);
+  });
+}
 
 
 function isPortrait() {

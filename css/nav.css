@@ -20,6 +20,7 @@
 #header h1 {
   color: #f4f4f4;
   flex-shrink: 0;
+  font-size: 3em;
 }
 
 #header img {
@@ -108,7 +109,7 @@
 }
 
 #header .menu-btn:checked ~ #menu {
-  max-height: 640px;
+  max-height: 1000px;
 }
 
 #header .menu-btn:checked ~ .menu-icon .navicon {
@@ -130,6 +131,9 @@
 
 
 @media (orientation: landscape) {
+  #header h1 {
+    font-size: 2em;
+  }
   #header li {
     float: left;
   }

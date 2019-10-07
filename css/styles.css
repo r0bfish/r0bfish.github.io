@@ -29,8 +29,6 @@ ul {
 }
 
 
-/*--- Grid areas ---*/
-
 
 .header-margin { margin-top: 70px; }
 .header-index { margin-top: 30px; }
@@ -77,7 +75,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  list-style-type: circle;
+  list-style-type: disc;
   padding: 20px;
 }
 .content li {
@@ -104,9 +102,24 @@ ul {
   color: #454545;
 }
 
+.text img {
+  display: block;
+  margin: auto;
+}
+
 .text p {
   margin: 20px 0;
 }
+
+.text li {
+  padding: 15px;
+}
+
+.text a { 
+  color: #454545;
+  text-decoration: underline; 
+}
+
 
 .center {
   text-align: center;
@@ -170,9 +183,19 @@ footer img {
 #intro
 #kampsport {}
 #begin-training {}
+#begin-training-info {}
+#before-training {}
+#priser {}
 #schema {}
 #pris {}
 #om-oss {}
+#om-klubben {}
+#instruktörer {}
+#hitta-hit {}
+#kontakt {}
+
+#sjj { }
+#bujinkan { } 
 
 
 /* Header gets to big, fix */
@@ -207,8 +230,8 @@ footer img {
 
   
   .header-margin { margin-top: 113px; }
-  /*.header-index { margin-top: 180px; }*/
-  .header-index { margin-top: 0px; }
+  .header-index { margin-top: 135px; }
+  /*.header-index { margin-top: 0px; }*/
 
 
   .banner > figure > figcaption > h1 { font-size: 4.2rem; padding: 0; }
@@ -222,7 +245,6 @@ footer img {
     max-width: 100%;
     margin: 1em auto;
 	font-size: 2.5em;
-	text-align: center;
   }
   
   .text h2 {
@@ -231,6 +253,10 @@ footer img {
   
   .text ul {
 	font-size: 2.5em;
+  }
+  
+  .text li {
+    padding: 45px 25px;
   }
   
   .content > h3 { 
@@ -255,6 +281,8 @@ footer img {
 	min-height: 100vh;
     transition: min-height 1000s steps(1);
     display: flex;
+	flex-direction: column;
+	justify-content: center;
     align-items: center;
   }
 	

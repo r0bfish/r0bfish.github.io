@@ -113,4 +113,5 @@
   
   .price-header > h3 { font-size: 3rem; }
   .price-text-grid > p { font-size: 3rem; }
+  .price-text-grid .sub-p { font-size: 1.5rem; }
 }
