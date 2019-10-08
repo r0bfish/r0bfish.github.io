@@ -62,6 +62,12 @@
   }
 }
 
+@media (orientation: portrait) { 
+  #cd-zoom-in, #cd-zoom-out {
+    display: none;
+  }
+}
+
 #cd-zoom-in {
   background-position: 50% 0;
   margin-top: 10px;
