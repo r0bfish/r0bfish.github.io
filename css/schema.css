@@ -34,9 +34,24 @@
 .child {background-color: #ccffc2; }
 .free { background-color: #ffffff; }
 .hide { background-color: #ffffff; opacity: 0.5; }
+.empty {}
+.time {}
+.year {}
 
 @media screen and (max-width: 911px), (orientation: portrait) {
   .flex-row {
+	flex-direction: column;
+	margin-bottom: 100px;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+	min-height: 150px;
+	width: 90%;
+	align-self: center;
+	border-bottom: 1px solid #cccccc;
+  }
+  /*.flex-row {
 	flex-direction: column;
 	margin-bottom: 100px;
   }
@@ -47,13 +62,13 @@
 	width: 90%;
 	align-self: center;
 	border-bottom: 1px solid #cccccc;
-  }
+  }*/
 
   
   .flex-column > h3 {
-	align-self: center;
-	min-width: 170px;
-	font-size: 2.5em;
+	align-self: flex-start;
+	font-size: 3.0em;
+	margin-top: 1em;
   }
   
   .training {
@@ -61,6 +76,15 @@
     margin: 5px 2px;
 	font-size: 2.5em;
 	line-height: 1.5em;
+	display: flex;
+	flex-wrap: wrap;
   }
+
+  
+  .training > h4 { flex: 0 0 50%; font-size: 1.5em; font-weight: 400; text-align: right; }
+  .training .time { flex: 0 0 50%; font-size: 1.5em; font-weight: 700; color: #454545; }
+  .training .year { font-size: 1.25em; margin-top: 10px;}
+  
+  .empty { display: none; }
 
 }
