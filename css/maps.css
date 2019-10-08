@@ -6,12 +6,11 @@
 }
 @media only screen and (min-width: 768px) {
   #google-container {
-    height: 70vh;
+    height: 600px;
   }
 }
 @media only screen and (min-width: 1170px) {
   #google-container {
-    transition: min-height 1000s steps(1);
     height: 600px;
   }
 }
