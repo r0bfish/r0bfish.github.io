@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/schema.css">
 	<link rel="stylesheet" href="css/coach.css">
 	<link rel="stylesheet" href="css/belts.css">
+	<link rel="stylesheet" href="css/maps.css">
 	
 	
 	
@@ -21,7 +22,7 @@
 	  
 	    <header id="header">
 		  <a class="logo" href="index.html">
-		    <img src="res/img/logo.png" alt="Logga för Eskilstuna Budoklubb"/>
+		    <img src="img/logo.png" alt="Logga för Eskilstuna Budoklubb"/>
 		    <h1>Eskilstuna Budoklubb</h1>
 		  </a>
 		  
@@ -52,7 +53,7 @@
 		
 		<section class="banner header-index">
 		  <figure>
-		    <img src="res/img/sportjujutsu-dark.jpg"/>
+		    <img src="img/sportjujutsu-dark.jpg"/>
 			<figcaption>
 			  <h1>Sport Ju-Jutsu</h1>
 			</figcaption>
@@ -122,7 +123,7 @@
 		          <a href="sjj.html">
 		            <div class="card-header">
 		              <figure>
-		                <img src="res/img/sportjujutsu.jpg"/>
+		                <img src="img/sportjujutsu.jpg"/>
 			            <figcaption><h3>Sport Ju-Jutsu</h3></figcaption>
 		              </figure>
 			        </div>
@@ -138,7 +139,7 @@
 		          <a href="bujinkan.html">
 		            <div class="card-header">
 		              <figure>
-		                <img src="res/img/bujinkan.jpg"/>
+		                <img src="img/bujinkan.jpg"/>
 			            <figcaption><h3>Bujinkan</h3></figcaption>
 		              </figure>
 			        </div>
@@ -176,7 +177,7 @@
 		
 		<section id="begin-training" class="banner">
 		  <figure>
-		    <img src="res/img/class.jpg"/>
+		    <img src="img/class.jpg"/>
 			<figcaption>
 			  <h1>Börja träna</h1>
 			</figcaption>
@@ -386,7 +387,7 @@
 		
 		<section id="om-oss" class="banner">
 		  <figure>
-		    <img src="res/img/grupp.jpg"/>
+		    <img src="img/grupp.jpg"/>
 			<figcaption>
 			  <h1>Om oss</h1>
 			</figcaption>
@@ -412,19 +413,19 @@
 		  <section class="col">
 			  
 		    <article class="coach">
-			  <img src="res/img/lars.jpg"/>
+			  <img src="img/lars.jpg"/>
 			  <h4>Lars Karlsson</h4>
 			  <p>Lars Karlsson är huvudinstruktör för vår SJJ-sektion. Karlsson är andra gradens svartbälte och är utbildad A-instruktör.</p>
 			</article>
 							  
 			<article class="coach">
-			  <img src="res/img/patrik.jpg"/>
+			  <img src="img/patrik.jpg"/>
 			  <h4>Patrik Andert</h4>
 			  <p>Patrik är svartbälte inom SJJ, aktivt tävlande på SM-nivå, och är instruktör på våra pass.</p>
 			</article>
 						  
 			<article class="coach">
-			  <img src="res/img/avatar.jpg"/>
+			  <img src="img/avatar.jpg"/>
 			  <h4>Christian Nordling</h4>
 			  <p>Christian är instruktör för barn- & ungdomdspass.</p>
 			</article>
@@ -433,22 +434,17 @@
 			  
 		</section>
 		
-		<section id="hitta-hit" class="style1">
-		  <article class="content">
-		    <div class="text">
-		      <h2 class="center">Hitta hit</h2>
-		      <p class="center">Du hittar oss på MunktellArenan i Eskilstuna. Gå ned för trappen bredvid kaféet inne i arenan, ta till höger och fortsätt ner för gången tills du ser vår dojo.</p>
-		    </div>
-		  </article>
-		</section>
-		
-		
-		<section id="kontakt" class="style2">
+		<section id="kontakt" class="style1">
 		  <article class="content">
 		  
 		    <div class="text">
 		      <h2 class="center">Kontakta oss</h2>
 			  <p class="center">Om du har frågor eller vill veta mer om oss tveka inte att kontakta oss!</p>
+			  <!--<h3 class="center">Sport Ju-Jutsu </h3>
+			  <h4 class="center">Telefon</h4>
+			  <p class="center">073-277 02 03</p>
+			  <h4 class="center">E-post</h4>
+			  <p class="center">lars_gr@hotmail.com</p>-->
 		    </div>
 			
 			<div class="col">
@@ -459,13 +455,33 @@
 				<li><h5>E-post</h5></li>
 				<li><p>lars_gr@hotmail.com</p></li>
 				<li><h5>Facebook</h5></li>
-				<li><a href="https://www.facebook.com/groups/192006767501819/"><img src="res/img/facebook.png" width=20px></a></li>
+				<li><a href="https://www.facebook.com/groups/192006767501819/"><img src="img/facebook.png" width=20px></a></li>
 			  </ul>
 			</div>
 			
 		  </article>
 		</section>
 		
+		
+		<section id="hitta-hit" class="style2">
+		  <article class="content">
+		    <div class="text">
+		      <h2 class="center">Hitta hit</h2>
+		      <p class="center">Du hittar oss på MunktellArenan i Eskilstuna. Gå ned för trappen bredvid kaféet inne i arenan, ta till höger och fortsätt ner för gången tills du ser vår dojo.</p>
+		    </div>
+		  </article>
+		</section>
+		
+		
+		
+		<section id="cd-google-map">
+		  <!-- #google-container will contain the map  -->
+		  <div id="google-container"></div>
+		  <!-- #cd-zoom-in and #zoom-out will be used to create our custom buttons for zooming-in/out -->
+		  <div id="cd-zoom-in"></div>
+		  <div id="cd-zoom-out"></div>
+		  <address>Verkstadsgatan 5, 633 42 Eskilstuna</address> 
+		</section>	
 		
 		
 		
@@ -485,14 +501,14 @@
 		    <li><p>Lars Karlsson</p></li>
 		    <li><p>lars_gr@hotmail.com</p></li>
 			<li><p>073-277 02 03</p></li>
-		    <li><a href="https://www.facebook.com/groups/192006767501819/"><img src="res/img/facebook.png"></a></li>
+		    <li><a href="https://www.facebook.com/groups/192006767501819/"><img src="img/facebook.png"></a></li>
 		  </ul>
 		  <ul>
 		    <li><h4>Kontakt Bujinkan</h4></li>
 		    <li><p>Mattias Haglund</p></li>
 		    <li><p>bujinkandojoeskilstuna@gmail.com</p></li>
 			<li><p>073-277 02 03</p></li>
-		    <li><a href="https://www.facebook.com/BujinkanDojoEskilstuna/"><img src="res/img/facebook.png"></a></li>
+		    <li><a href="https://www.facebook.com/BujinkanDojoEskilstuna/"><img src="img/facebook.png"></a></li>
 		  </ul>
 		  <ul>
 		    <li><h4>Post & besöksadress</h4></li>
@@ -511,6 +527,7 @@
 		
 	  </div>
 	  
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKgtgJtc5lxL20dHmYi8uAWaePxKhxssE"></script>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="js/script.js"></script>
 	</body>

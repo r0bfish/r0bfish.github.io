@@ -33,7 +33,10 @@
   border: 1px solid rgba(0, 0, 0, 0.01);
   max-width: 400px;
   margin: 20px 25px;
-  transition: 0.2s;
+  /*transition: 0.2s;*/
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
 }
 
 
