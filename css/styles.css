@@ -265,6 +265,7 @@ footer img {
   
   footer {
     flex-direction: column;
+	padding: 100px 0;
   }
 
   footer ul {
