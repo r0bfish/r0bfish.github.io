@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  alert("Denna förening finns inte längre. Men om du fortfarande är intresserad av en kampsport så rekommenderar jag att prova på BJJ på Hilti, som också finns i munktell!\n\nhttps://www.hiltieskilstuna.se/");
 	
   addCollapsible();
   googleMap();
