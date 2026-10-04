@@ -1,7 +1,99 @@
 $(document).ready(function(){
 
-  alert("Denna förening finns inte längre. Men om du fortfarande är intresserad av en kampsport så rekommenderar jag att prova på BJJ på Hilti, som också finns i munktell!\n\nhttps://www.hiltieskilstuna.se/");
-	
+
+
+	// Create popup
+    var popup = `
+        <div id="clubPopupOverlay">
+            <div id="clubPopup">
+                <button id="clubPopupClose">&times;</button>
+
+                <h2>Denna förening finns inte längre</h2>
+
+                <p>
+                    Men om du fortfarande är intresserad av en kampsport
+                    så rekommenderar jag att prova på BJJ på Hilti,
+                    som också finns i Munktell!
+                </p>
+
+                <a href="https://www.hiltieskilstuna.se/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Besök Hilti Eskilstuna
+                </a>
+            </div>
+        </div>
+    `;
+
+    // Add popup to page
+    $("body").append(popup);
+
+    // Popup styling
+    $("#clubPopupOverlay").css({
+        "display": "flex",
+        "position": "fixed",
+        "top": "0",
+        "left": "0",
+        "width": "100%",
+        "height": "100%",
+        "background": "rgba(0, 0, 0, 0.65)",
+        "z-index": "999999",
+        "align-items": "center",
+        "justify-content": "center"
+    });
+
+    $("#clubPopup").css({
+        "position": "relative",
+        "width": "90%",
+        "max-width": "500px",
+        "padding": "30px",
+        "background": "#fff",
+        "border-radius": "12px",
+        "box-shadow": "0 10px 40px rgba(0,0,0,0.3)",
+        "box-sizing": "border-box",
+        "font-family": "Arial, sans-serif",
+        "text-align": "center"
+    });
+
+    $("#clubPopup h2").css({
+        "margin-top": "0"
+    });
+
+    $("#clubPopupClose").css({
+        "position": "absolute",
+        "top": "8px",
+        "right": "12px",
+        "border": "0",
+        "background": "transparent",
+        "font-size": "30px",
+        "cursor": "pointer",
+        "line-height": "1"
+    });
+
+    $("#clubPopup a").css({
+        "display": "inline-block",
+        "margin-top": "15px",
+        "padding": "12px 20px",
+        "background": "#222",
+        "color": "#fff",
+        "text-decoration": "none",
+        "border-radius": "6px"
+    });
+
+    // Close button
+    $("#clubPopupClose").on("click", function () {
+        $("#clubPopupOverlay").fadeOut(200, function () {
+            $(this).remove();
+        });
+    });
+
+    // Optional: close when clicking outside the popup
+    $("#clubPopupOverlay").on("click", function (e) {
+        if (e.target === this) {
+            $("#clubPopupClose").trigger("click");
+        }
+    });
+  
   addCollapsible();
   googleMap();
 	
